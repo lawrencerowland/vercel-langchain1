@@ -8,6 +8,6 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     llm = OpenAI(temperature=0.9)
-    text = "What would be a good company name a company that makes colorful socks?"
+    text = "What is a project good for ?"
 
-    return llm(text)
+    return text, llm(text)
