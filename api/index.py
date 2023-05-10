@@ -10,5 +10,4 @@ def home():
     llm = OpenAI(temperature=0.9)
     text = "What is a project good for ?"
 
-    return text
-    return llm(text)
+    return text, llm(text)
